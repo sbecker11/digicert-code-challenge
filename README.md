@@ -29,19 +29,12 @@ java -jar target/demo-0.0.1-SNAPSHOT.jar
 
 CURL TESTS:
 
-curl -i -X GET -H "Content-Type: application/json" \
-http://localhost:8080/list-books
+curl -i -X GET -H "Content-Type: application/json" http://localhost:8080/list-books
 
-curl -i -X GET -H "Content-Type: application/json" \
-http://localhost:8080/get-book/1
+curl -i -X GET -H "Content-Type: application/json" http://localhost:8080/get-book/1
 
-curl -i -X POST -H "Content-Type: application/json" \
--d "{\"firstName\":\"Frank\", \"Title\":\"Dune\"}" \
-http://localhost:8080/create-book
+curl -i -X POST -H "Content-Type: application/json" -d "{\"firstName\":\"Frank\", \"Title\":\"Dune\"}" http://localhost:8080/create-book
 
-curl -i -X PUT -H "Content-Type: application/json" \
--d "{\"firstName\":\"Frank\", \"Title\":\"Dune\"}" \
-http://localhost:8080/update-book/1
+curl -i -X PUT -H "Content-Type: application/json" -d "{\"firstName\":\"Frank\", \"Title\":\"Dune\"}" http://localhost:8080/update-book/1
 
-curl -i -X DELETE -H "Content-Type: application/json" \
-http://localhost:8080/delete-book/1
+curl -i -X DELETE -H "Content-Type: application/json" http://localhost:8080/delete-book/1
